@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contact-rsses on Tokomak Studio</title>
-    <link>http://tokomak.github.io/contact/index.xml</link>
+    <link>http://tokomak-studio.github.io/contact/index.xml</link>
     <description>Recent content in Contact-rsses on Tokomak Studio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
     <lastBuildDate>Mon, 24 Oct 2016 21:37:22 +1100</lastBuildDate>
-    <atom:link href="http://tokomak.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tokomak-studio.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Contact</title>
-      <link>http://tokomak.github.io/contact/</link>
+      <link>http://tokomak-studio.github.io/contact/</link>
       <pubDate>Mon, 24 Oct 2016 21:37:22 +1100</pubDate>
       
-      <guid>http://tokomak.github.io/contact/</guid>
+      <guid>http://tokomak-studio.github.io/contact/</guid>
       <description>&lt;p&gt;&lt;h2&gt;Get in touch.&lt;/h2&gt;
 &lt;h3&gt;All Enquiries&lt;/h3&gt;
 &lt;p&gt;
