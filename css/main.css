@@ -1,0 +1,911 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #404040;
+    font-family: 'Avenir Next', sans-serif;
+}
+
+html[data-type='blog'],
+html[data-type='blog'] body {
+    background-color: #f6f6f6;
+}
+
+body {
+    font-size: 1.125em;
+    line-height: 1.75;
+}
+
+@media screen and (max-width: 960px) {
+    body { font-size: 1.05em; }
+}
+
+@media screen and (max-width: 767px) {
+    body { font-size: 0.938em; }
+}
+
+@media screen and (max-width: 580px) {
+    body { font-size: 0.813em; }
+}
+
+h1, h2, h3, h4 {
+    margin: 1.414em 0 0.5em;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.441em; }
+h2 { font-size: 1.953em; }
+h3 { font-size: 1.563em; }
+h4 { font-size: 1.25em; }
+
+h1 a, h2 a, h3 a, h4 a {
+    text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover,
+h1 a:active, h2 a:active, h3 a:active, h4 a:active {
+    text-decoration: underline;
+}
+
+p a {
+    display: inline;
+    height: auto;
+    padding: 2px 4px 0 4px;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #0036FF;
+    color: #fff;
+}
+
+p:empty { display: none; }
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, p:first-child, ul:first-child, ol:first-child {
+    margin-top: 0;
+}
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, p:last-child, ul:last-child, ol:last-child {
+    margin-bottom: 0;
+}
+
+.svg--icons {
+    height: 0;
+    width: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.svg--icon svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.page-load {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 8px;
+    transform: translate(0%, 0%);
+    left: 80px;
+    z-index: 0;
+    overflow: hidden;
+
+    transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+}
+
+    .page-load .canvas {
+        background-color: #0036FF;
+        position: absolute;
+        top: 0px;
+        left: 0px; 
+        width: calc(100vw - 80px);
+        height: 100%;
+    }
+
+.loading .page-load {
+    width: calc(100vw - 80px);
+}
+
+#toggle__blog-list-wrap {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+    .blogbar .taskbar__blog-list {
+        transform: translate(100%, 0);
+    }
+
+    .blogbar .taskbar__blog-btn >span {
+        opacity: 0;
+    }
+
+    .taskbar__blog-btn:after,
+    .taskbar__blog-btn:before {
+        height: 4px;
+        width: 50px;
+        position: absolute;
+        content: '';
+        background-color: #404040;
+        top: 50%;
+        left: 50%;
+
+        transform-origin: 50% 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+
+    .taskbar__blog-btn:before {
+        transform: translate(-50%, -50%) rotate(135deg);
+    }
+
+    .blogbar .taskbar__blog-btn:after,
+    .blogbar .taskbar__blog-btn:before {
+        opacity: 1;
+    }
+
+
+.barba-container {
+    min-height: 100%;
+    transition: all 0.3s linear;
+}
+
+    .contactmodal .barba-container {
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+        opacity: 0.3;
+    }
+
+#preloader {
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+}
+
+.contactmodal #contact--focus {
+    z-index: 2;
+    position: fixed;
+    width: 120vw;
+    height: 120vh;
+    left: 50%;
+    top: 50%;
+    margin-left: -60vw;
+    margin-top: -60vh;
+}
+
+#contact {
+    position: fixed;
+    top: 50%;
+    margin-top: -30vw;
+    right: 20px;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    z-index: 3;
+
+    -webkit-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+    -ms-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+    -o-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+    transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+}
+
+    .contactmodal #contact {
+        width: calc(100vw - 129px);
+        height: 60vw;
+    }
+
+    .contact--inner {
+        position: absolute;
+        width: calc(100vw - 129px);
+        height: 60vw;
+        left: calc(-100vw + 129px);
+        top: 0px;
+        background-color: rgba(34, 34, 34, 0.5);
+
+        -webkit-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+        -moz-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+        -ms-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+        -o-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+        transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+    }
+
+        .contactmodal .contact--inner {
+            left: 0px;
+        }
+
+    .contact__left {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
+        background-image: url(/images/sydney-compressed.jpg);
+    }
+
+    .contact__right {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 50%;
+        height: 100%;
+        color: #fff;
+        padding: 20px;
+        padding-left: 20%;
+        text-align: right;
+        font-size: 0.8em;
+    }
+
+    .contact__close-btn {
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact__close-btn:after, 
+    .contact__close-btn:before {
+        height: 4px;
+        width: 50px;
+        position: absolute;
+        content: '';
+        background-color: #f6f6f6;
+        top: 50%;
+        left: 50%;
+        transform-origin: 50% 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        opacity: 0.1;
+        transition: all 0.3s linear;
+    }
+
+    .contact__close-btn:before {
+        transform: translate(-50%, -50%) rotate(135deg);
+    }
+
+.wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #404040;
+    padding-left: 88px;
+}
+
+    [data-type='home'] .wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        min-height: 100%;
+    }
+
+.container {
+    background-color: #f6f6f6;
+    min-height: 100%;
+}
+
+.post {
+    background-color: #f6f6f6;
+    color: #222;
+    padding: 260px 20px 100px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+    .post__header {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        background-color: #222;
+        min-width: 300px;
+        color: #f6f6f6;
+        font-size: 10px;
+        padding: 7px 14px 7px 14px;
+        letter-spacing: 0.2em;
+        line-height: 1.4;
+    }
+
+    .post__header .share {
+        display: inline-block;
+    }
+
+        .post__header .share .share__icon {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .post__header .share .share__icon svg * {
+                fill: #f6f6f6;
+            }
+
+#menu {
+    position: fixed;
+    z-index: 5;
+    right: 40px;
+    top: 40px;
+    padding-right: 39px;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+    #menu nav ul {
+        list-style: none;
+        display: block;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+        #menu nav ul li {
+            display: inline-block;
+        }
+
+            #menu nav ul li a {
+                display: block;
+                padding: 0 8px;
+                color: #fff;
+                text-decoration: none;
+                height: 38px;
+                line-height: 38px;
+            }
+
+            [data-type='blog'] #menu nav ul li a {
+                color: #222;
+            }
+
+    .menu__hamburger-btn {
+        display: block;
+        width: 38px;
+        height: 38px;
+        border-left: 0px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+        .menu__hamburger-btn >i {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            overflow: hidden;
+        }
+
+            .menu__hamburger-btn >i >i {
+                display: block;
+                height: 2px;
+                background-color: #0036FF;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 40px;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                transform-origin: 50% 50%;
+            }
+
+        .menu__hamburger-btn >i:first-child {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        .menu__hamburger-btn >i:last-child {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+#taskbar {
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    bottom: 0px;
+    background-color: #333;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+    .taskbar__mark {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: block;
+        overflow: hidden;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+    }
+
+    .loading .taskbar__mark {
+        /* animation: spin 3s cubic-bezier(0.6, 0.2, 0.4, 0.8) infinite; */
+    }
+
+    .taskbar__blog-btn {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        text-align: center;
+        background-color: #222;
+        z-index: 1;
+        cursor: pointer;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        .taskbar__blog-btn >span {
+            display: inline-block;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: rotate(90deg);
+            transform-origin: center center;
+            width: 100px;
+            height: 80px;
+            line-height: 80px;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            margin-left: -50px;
+            margin-top: -40px;
+            text-transform: uppercase;
+            overflow: hidden;
+            opacity: 1;
+
+            transition: all 0.3s linear;
+        }
+
+    .taskbar__blog-list {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: -232px;
+        background-color: rgba(0,0,0,0.3);
+        margin: 0;
+        padding: 0;
+        width: 320px;
+        z-index: -1;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        transform: translate(0%, 0%);
+
+        -webkit-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+        -moz-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+        -ms-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+        -o-transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+        transition: all 0.4s cubic-bezier(0.82, 0, 0.18, 1);
+    }
+
+        .taskbar__blog-list ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .taskbar__blog-list ul li {
+            display: block;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 100%;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+            .taskbar__blog-list ul li:before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 54, 255, 0.2);                
+            }
+
+            .taskbar__blog-list ul li .bg {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background-color: rgba(0, 54, 255, 0.2);
+                transform: translate(0, -100%);
+            }
+
+                .taskbar__blog-list ul li .bg.init-2,
+                .taskbar__blog-list ul li .bg.init-1 {
+                    transform: translate(0, 100%);
+                }
+
+                .taskbar__blog-list ul li.in-0 .bg,
+                .taskbar__blog-list ul li.in-3 .bg,
+                .taskbar__blog-list ul li.out-0 .bg,
+                .taskbar__blog-list ul li.out-3 .bg {
+                    transform: translate(0, -100%);
+                    transition: all 0.9s ease;
+                }
+
+                .taskbar__blog-list ul li.in-2 .bg,
+                .taskbar__blog-list ul li.in-1 .bg,
+                .taskbar__blog-list ul li.out-2 .bg,
+                .taskbar__blog-list ul li.out-1 .bg {
+                    transform: translate(0, 100%);
+                    transition: all 0.9s ease;
+                }
+
+                .taskbar__blog-list ul li .bg >i {
+                    display: block;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    bottom: 0px;
+                    right: 0px;
+                    width: 100%;
+                    height: 100%;
+                    transform: translate(0, 100%);
+                }
+
+                    .taskbar__blog-list ul li.in-2 .bg >i,
+                    .taskbar__blog-list ul li.in-1 .bg >i {
+                        transform: translate(0, -100%);
+                    }
+
+                    .taskbar__blog-list ul li.in-0 .bg >i,
+                    .taskbar__blog-list ul li.in-3 .bg >i,
+                    .taskbar__blog-list ul li.out-0 .bg >i,
+                    .taskbar__blog-list ul li.out-3 .bg >i {
+                        transform: translate(0, 100%);
+                        transition: all 0.9s ease;
+                    }
+
+                    .taskbar__blog-list ul li.in-2 .bg >i,
+                    .taskbar__blog-list ul li.in-1 .bg >i,
+                    .taskbar__blog-list ul li.out-2 .bg >i,
+                    .taskbar__blog-list ul li.out-1 .bg >i {
+                        transform: translate(0, -100%);
+                        transition: all 0.9s ease;
+                    }
+
+                    .taskbar__blog-list ul li .bg >i >svg {
+                        top: 6px;
+                        right: 20px;
+                        left: auto;
+                        bottom: auto;
+                        width: 20%;
+                        height: 20%;
+                        opacity: 0.3;
+
+                        opacity: 0.3;
+                    }
+
+            .taskbar__blog-list ul li:hover .bg {
+                transform: translate(0, 0);
+                transition: all 0.9s ease;
+            }
+
+                .taskbar__blog-list ul li:hover .bg >i {
+                    transform: translate(0, 0);
+                    transition: all 0.9s ease;
+                }
+
+            .taskbar__blog-list ul li a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                color: #fff;
+                text-decoration: none;
+                z-index: 1;
+            }
+
+                .taskbar__blog-list ul li a .title {
+                    position: absolute;
+                    bottom: 44px;
+                    width: 100%;
+                    padding: 0 20px 0 40px;
+                    font-size: 18px;
+                    line-height: 1.3;
+                    display: block;
+                    text-align: right;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 0.02em;
+                }
+
+                .taskbar__blog-list ul li a .tags {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    display: block;
+                    line-height: 0;
+                }
+
+                    .taskbar__blog-list ul li a .tag {
+                        display: inline-block;
+                        line-height: 18px;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        background-color: #fff;
+                        color: #000;
+                        height: 17px;
+                        padding: 0 4px;
+                        overflow: hidden;
+                        font-weight: bold;
+                        letter-spacing: 0.02em;
+                        margin-left: 4px;
+                    }
+
+                        .taskbar__blog-list ul li a .tag.tag--latest {
+                            background-color: #0036FF;
+                            color: #fff;
+                        }
+
+                .taskbar__blog-list ul li a .date { display: none; }
+
+
+
+
+
+
+
+
+@-moz-keyframes spin {
+  from {-moz-transform: rotate(0deg);}
+  to {-moz-transform: rotate(1440deg);}
+}
+@-webkit-keyframes spin {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(1440deg);}
+}
+@-o-keyframes spin {
+  from {-o-transform: rotate(0deg);}
+  to {-o-transform: rotate(1440deg);}
+}
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(1440deg);}
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

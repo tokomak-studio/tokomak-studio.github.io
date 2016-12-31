@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Head of Digital: Eddy Respondek
+    Email: eddy@tokomak.studio
+    From: Sydney, New South Wales, Australia
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+    Languages: PHP, HTML5, CSS3
+    Libraries: jQuery, Modernizr
+    Doctype: HTML5
+    IDE: Sublime Text
