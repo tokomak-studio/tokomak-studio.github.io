@@ -15,64 +15,99 @@
       <pubDate>Sun, 23 Oct 2016 20:37:22 +1100</pubDate>
       
       <guid>http://tokomak-studio.github.io/blog/test-1/</guid>
-      <description>&lt;p&gt;&lt;h1&gt;The secret ingredients of great projects&lt;/h1&gt;
+      <description>
+
+&lt;h1 id=&#34;the-secret-ingredients-of-great-projects&#34;&gt;The secret ingredients of great projects&lt;/h1&gt;
+
 &lt;p&gt;Usually you get an A for excellence. You might even get an E for Effort and a T for Nice Try, if you’re being judged by Phife Dawg (RIP) from A Tribe Called Quest. But, it’s generally agreed that F is for Failing.&lt;/p&gt;
+
 &lt;p&gt;However, F is a very important ingredient when considering what a great project is.&lt;/p&gt;
-&lt;h2&gt;Burger time&lt;/h2&gt;
+
+&lt;h2 id=&#34;burger-time&#34;&gt;Burger time&lt;/h2&gt;
+
 &lt;p&gt;Think of a project like a burger — an environmentally friendly burger, of course. Sometimes you have to ask yourself: “does this have enough mayo?”. “is the bun too hard?”, “what if we tried a different kind of flour?”.&lt;/p&gt;
+
 &lt;p&gt;We should be doing the same with projects and increase the chances of making every single bite interesting and flavorful. We might not succeed, but it’s better to try and fail than fail to try. If we don’t have the right ingredients, the burger will not be good, and then it’s often better not to eat it.&lt;/p&gt;
+
 &lt;p&gt;So what are the secret ingredients?&lt;/p&gt;
-&lt;h2&gt;6 F-words to consider&lt;/h2&gt;
+
+&lt;h2 id=&#34;6-f-words-to-consider&#34;&gt;6 F-words to consider&lt;/h2&gt;
+
 &lt;p&gt;&lt;em&gt;Fun:&lt;/em&gt; Great burgers are crafted in kitchens where imaginations best friend is experimentation.&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Fame:&lt;/em&gt; A burger tastes better if there’s a good story behind it.&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Fortune:&lt;/em&gt; It takes time to do make a great burger. And if Benjamin Franklin is right, it also takes money.&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Forward:&lt;/em&gt; If you want to make “burgers of the future”, you have to challenge yourself. It’s scary to try new things, but the results are more interesting and you grow from it.&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Freedom:&lt;/em&gt; Creativity thrives when there’s room to be creative. Trust is the secret sauce. It can take time to earn trust, but creativity thrives when you have it.&lt;/p&gt;
+
 &lt;p&gt;&lt;em&gt;Footprint:&lt;/em&gt; It’s our responsibility to make the world better place, one burger (or pixel) at a time.&lt;/p&gt;
+
 &lt;p&gt;You can use this &lt;a href=&#34;http://codepen.io/arnevankauter/full/rrommZ/&#34;&gt;simple tool&lt;/a&gt; to check if anything is missing. If there are gaps, try to bridge them before the project starts.&lt;/p&gt;
+
 &lt;p&gt;If your burger looks happy, and the project makes you unhappy, you might need to get a hobby, hire a coach, change business or run a marathon.&lt;/p&gt;
-&lt;h2&gt;Ask yourself questions&lt;/h2&gt;
+
+&lt;h2 id=&#34;ask-yourself-questions&#34;&gt;Ask yourself questions&lt;/h2&gt;
+
 &lt;p&gt;If you’re having a hard time figuring out where to put the sliders, consider these questions:&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Fun:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-    &lt;li&gt;What makes users, the client and your team excited?&lt;/li&gt;
-    &lt;li&gt;Is the chemistry good?&lt;/li&gt;
-    &lt;li&gt;Why are we looking forward to getting started?&lt;/li&gt;
+&lt;li&gt;What makes users, the client and your team excited?&lt;/li&gt;
+&lt;li&gt;Is the chemistry good?&lt;/li&gt;
+&lt;li&gt;Why are we looking forward to getting started?&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;Fame:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-    &lt;li&gt;What’s the story behind the project?&lt;/li&gt;
-    &lt;li&gt;(Why) would people be interested?&lt;/li&gt;
-    &lt;li&gt;Will the press release “write itself”?&lt;/li&gt;
+&lt;li&gt;What’s the story behind the project?&lt;/li&gt;
+&lt;li&gt;(Why) would people be interested?&lt;/li&gt;
+&lt;li&gt;Will the press release “write itself”?&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;Fortune:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-    &lt;li&gt;Is there enough time to make it great?&lt;/li&gt;
-    &lt;li&gt;Does time go hand in hand with the budget?&lt;/li&gt;
-    &lt;li&gt;How can we scope it in a way, so the two go hand in hand?&lt;/li&gt;
+&lt;li&gt;Is there enough time to make it great?&lt;/li&gt;
+&lt;li&gt;Does time go hand in hand with the budget?&lt;/li&gt;
+&lt;li&gt;How can we scope it in a way, so the two go hand in hand?&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;Forward:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-    &lt;li&gt;Are we going into uncharted territory and challenging the status quo?&lt;/li&gt;
-    &lt;li&gt;Will we launch this project being a different agency than when we started?&lt;/li&gt;
-    &lt;li&gt;What’s the short and long time vision for the brand/product/service?&lt;/li&gt;
+&lt;li&gt;Are we going into uncharted territory and challenging the status quo?&lt;/li&gt;
+&lt;li&gt;Will we launch this project being a different agency than when we started?&lt;/li&gt;
+&lt;li&gt;What’s the short and long time vision for the brand/product/service?&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;Freedom:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-    &lt;li&gt;Is there a willingness to take risks or do we need to play it safe?&lt;/li&gt;
-    &lt;li&gt;Are there few or many stakeholders?&lt;/li&gt;
-    &lt;li&gt;Do they trust us?&lt;/li&gt;
+&lt;li&gt;Is there a willingness to take risks or do we need to play it safe?&lt;/li&gt;
+&lt;li&gt;Are there few or many stakeholders?&lt;/li&gt;
+&lt;li&gt;Do they trust us?&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;&lt;strong&gt;Footprint:&lt;/strong&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-    &lt;li&gt;Are we making a real difference?&lt;/li&gt;
-    &lt;li&gt;Are we contributing to something good or bad in the world?&lt;/li&gt;
-    &lt;li&gt;Do we change human behaviour in a positive or negative way?&lt;/li&gt;
+&lt;li&gt;Are we making a real difference?&lt;/li&gt;
+&lt;li&gt;Are we contributing to something good or bad in the world?&lt;/li&gt;
+&lt;li&gt;Do we change human behaviour in a positive or negative way?&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;If you answered no to any of those, perhaps it’s time to change the circumstances together.&lt;/p&gt;
-&lt;h2&gt;Food for thought&lt;/h2&gt;
+
+&lt;h2 id=&#34;food-for-thought&#34;&gt;Food for thought&lt;/h2&gt;
+
 &lt;p&gt;It’s interesting to dissect a project through this burger-lense. We should always be striving for all sliders to be high but in reality, very few projects (and burgers) have everything.&lt;/p&gt;
-&lt;p&gt;The important thing is that the total “score”, if you will, is positive and that we strive to make the parameters high before commencing and throughout the project. So, if one parameter is low but the other five are high, it’s most likely a great project.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;The important thing is that the total “score”, if you will, is positive and that we strive to make the parameters high before commencing and throughout the project. So, if one parameter is low but the other five are high, it’s most likely a great project.&lt;/p&gt;
 </description>
     </item>
     
@@ -82,7 +117,9 @@
       <pubDate>Mon, 21 Mar 2016 21:37:22 +1100</pubDate>
       
       <guid>http://tokomak-studio.github.io/blog/test-2/</guid>
-      <description>&lt;h1&gt;Article 2&lt;/h1&gt;
+      <description>
+
+&lt;h1 id=&#34;article-2&#34;&gt;Article 2&lt;/h1&gt;
 </description>
     </item>
     

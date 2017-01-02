@@ -14,7 +14,9 @@
       <pubDate>Mon, 21 Mar 2016 21:37:22 +1100</pubDate>
       
       <guid>http://tokomak-studio.github.io/blog/test-2/</guid>
-      <description>&lt;h1&gt;Article 2&lt;/h1&gt;
+      <description>
+
+&lt;h1 id=&#34;article-2&#34;&gt;Article 2&lt;/h1&gt;
 </description>
     </item>
     

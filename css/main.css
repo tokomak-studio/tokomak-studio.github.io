@@ -118,6 +118,7 @@ p a {
     text-decoration: none;
     background-color: #0036FF;
     color: #fff;
+    white-space: nowrap;
 }
 
 p:empty { display: none; }
